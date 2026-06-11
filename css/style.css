@@ -38,3 +38,14 @@ header {
 .one {
     display: grid;
 }
+
+.canvas-container {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+
+canvas {
+   display: block;
+   width: 100%;
+}
