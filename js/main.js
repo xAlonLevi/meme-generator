@@ -1,9 +1,15 @@
 'use strict'
 
-console.log('hi');
+let input = document.getElementById('myInput')
 
 let gElCanvas
 let gCtx
+
+input.addEventListener('input', function () {
+gMeme.lines[0].txt = input.value
+renderMeme()
+})
+console.log(input.value);
 
 function onInit() {
     gElCanvas = document.querySelector('canvas')
@@ -13,9 +19,9 @@ function onInit() {
 
 function renderMeme() {
     const elImg = new Image()
-    elImg.src = gImgs[0].url
+    elImg.src = gImgs[1].url
     elImg.onload = () => renderImg(elImg)
-}   
+}
 
 function renderImg(elImg) {
     gElCanvas.height = (elImg.naturalHeight / elImg.naturalWidth) * gElCanvas.width
@@ -26,12 +32,12 @@ function renderImg(elImg) {
 function renderText() {
     const line = gMeme.lines[0]
     gCtx.font = `${line.size}px Impact`
-  gCtx.fillStyle = line.color
-  gCtx.strokeStyle = 'white'
-  gCtx.lineWidth = 2
-  gCtx.textAlign = 'center'
-  gCtx.strokeText(line.txt, gElCanvas.width / 2, line.size + 10)
-  gCtx.fillText(line.txt, gElCanvas.width / 2, line.size + 10)
+    gCtx.fillStyle = line.color
+    gCtx.strokeStyle = 'white'
+    gCtx.lineWidth = 2
+    gCtx.textAlign = 'center'
+    gCtx.strokeText(line.txt, gElCanvas.width / 2, line.size + 10)
+    gCtx.fillText(line.txt, gElCanvas.width / 2, line.size + 10)
 }
 
 
@@ -39,12 +45,12 @@ function renderText() {
 var gImgs = [
     {
         id: 1,
-        url: 'img/1.jpg',
+        url: 'meme-imgs (square)/1.jpg',
         keywords: ['funny', 'cat']
     },
-        {
+    {
         id: 2,
-        url: 'img/2.jpg',
+        url: 'meme-imgs (square)/2.jpg',
         keywords: ['funny', 'cat']
     }
 ]
