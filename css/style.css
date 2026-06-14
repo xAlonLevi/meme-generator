@@ -41,6 +41,18 @@ canvas {
     justify-self: center;
     margin-top: 100px;
     padding: 100px;
-    background-color: blue;
-    
+    background-color: rgb(184, 184, 206);
+
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;   
+    gap: 20px;
+    justify-content: center;
+}
+
+section img {
+    width: 150px;
+    cursor: pointer;
 }
