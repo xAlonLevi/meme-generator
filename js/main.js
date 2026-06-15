@@ -129,6 +129,21 @@ function renderGallery() {
 function onImgSelect(imgIdx) {
     console.log(imgIdx)
     gMeme.selectedImgId = imgIdx
+
+    openGallery()
     renderMeme()
+}
+
+function openGallery() {
+    const elGallery = document.querySelector('.img-Gallery')
+    const elMainPage = document.querySelector('.tool-bar')
+
+    if (elGallery.style.display === 'block') {
+        elMainPage.style.display = 'grid'
+        elGallery.style.display = 'none'
+    } else {
+        elMainPage.style.display = 'none'
+        elGallery.style.display = 'block'
+    }
 
 }
