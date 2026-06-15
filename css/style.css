@@ -47,6 +47,7 @@ canvas {
     margin-top: 100px;
     padding: 100px;
     background-color: rgb(184, 184, 206);
+    position: relative;
 
 }
 
@@ -77,4 +78,15 @@ section img {
     height: 100%;
     padding-top: 1.5em;
     display: none;
+}
+
+.share {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+a {
+    font: 1.25em sans-serif;
+    padding: 5px;
 }

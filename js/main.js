@@ -147,3 +147,12 @@ function openGallery() {
     }
 
 }
+
+function downloadCanvas(elLink) {
+    
+    elLink.download = 'meme' // Set a name for the downloaded file
+
+    const dataUrl = gElCanvas.toDataURL()
+    // console.log(dataUrl)
+    elLink.href = dataUrl
+}
