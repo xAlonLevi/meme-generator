@@ -156,3 +156,4 @@ function downloadCanvas(elLink) {
     // console.log(dataUrl)
     elLink.href = dataUrl
 }
+
