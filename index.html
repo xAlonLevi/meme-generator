@@ -13,22 +13,29 @@
 
     <div class="top-container">
 
-        <header class="icon">
+        <header class="logo">
             <h1>
-                 <img src="icon-imgs/logo.png" alt="MemeGen">
+                <img src="icon-imgs/logo.png" alt="MemeGen">
             </h1>
         </header>
 
         <div class="nav-bar">
-            <button onclick="openGallery()">gallery</button>
+            <button class="gallery" onclick="openGallery()">gallery</button>
 
             <div class="img-Gallery">
                 <section></section>
             </div>
 
-            <button>memes</button>
-            <button>about</button>
+            <div class="desktop-menu">
+                <button>memes</button>
+                <button>about</button>
+            </div>
+
+            <button class="menu-btn" onclick="onMenuClick()">
+                <img class="menu-icon" src="icon-imgs/Shape.png" alt="menu">
+            </button>
         </div>
+
 
     </div>
 

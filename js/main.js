@@ -72,6 +72,66 @@ var gImgs = [
         url: 'meme-imgs (square)/6.jpg',
         keywords: ['funny', 'cat']
     },
+    {
+        id: 7,
+        url: 'meme-imgs (square)/7.jpg',
+        keywords: ['funny', 'cat']
+    },
+    {
+        id: 8,
+        url: 'meme-imgs (square)/8.jpg',
+        keywords: ['funny', 'cat']
+    },
+    {
+        id: 9,
+        url: 'meme-imgs (square)/9.jpg',
+        keywords: ['funny', 'cat']
+    },
+    {
+        id: 10,
+        url: 'meme-imgs (square)/10.jpg',
+        keywords: ['funny', 'cat']
+    },
+    {
+        id: 11,
+        url: 'meme-imgs (square)/11.jpg',
+        keywords: ['funny', 'cat']
+    },
+    {
+        id: 12,
+        url: 'meme-imgs (square)/12.jpg',
+        keywords: ['funny', 'cat']
+    },
+    {
+        id: 13,
+        url: 'meme-imgs (square)/13.jpg',
+        keywords: ['funny', 'cat']
+    },
+    {
+        id: 14,
+        url: 'meme-imgs (square)/14.jpg',
+        keywords: ['funny', 'cat']
+    },
+    {
+        id: 15,
+        url: 'meme-imgs (square)/15.jpg',
+        keywords: ['funny', 'cat']
+    },
+    {
+        id: 16,
+        url: 'meme-imgs (square)/16.jpg',
+        keywords: ['funny', 'cat']
+    },
+    {
+        id: 17,
+        url: 'meme-imgs (square)/17.jpg',
+        keywords: ['funny', 'cat']
+    },
+    {
+        id: 18,
+        url: 'meme-imgs (square)/18.jpg',
+        keywords: ['funny', 'cat']
+    }
 ]
 
 var gMeme = {
@@ -149,7 +209,7 @@ function openGallery() {
 }
 
 function downloadCanvas(elLink) {
-    
+
     elLink.download = 'meme' // Set a name for the downloaded file
 
     const dataUrl = gElCanvas.toDataURL()
@@ -157,3 +217,6 @@ function downloadCanvas(elLink) {
     elLink.href = dataUrl
 }
 
+function onMenuClick() {
+    
+}

@@ -7,6 +7,17 @@ body {
     font-family: sans-serif;
 }
 
+h1 {
+    margin: 0;
+    line-height: 0;
+}
+
+.logo img {
+    width: 152px;
+    height: 32px;
+    height: auto;
+    display: block;
+}
 
 .top-container {
     display: grid;
@@ -16,14 +27,20 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
-.nav-bar button {
+.desktop-menu {
     display: none;
 }
 
-.nav-bar::after {
+.menu-icon {
+    display: block;
+    width: 24px;
+    cursor: pointer;
+}
+
+/* .nav-bar::after {
     content: "☰";
     font-size: 1.5rem;
-}
+} */
 
 .tool-bar {
     display: grid;
@@ -65,6 +82,10 @@ canvas {
     font-size: 1rem;
 }
 
+.gallery {
+    display: none;
+}
+
 .img-Gallery {
     background-color: #f7f7f7;
     padding: 1em;
@@ -90,6 +111,20 @@ section img {
 } */
 
 @media (min-width: 800px) {
+    /* .icon img {
+        width: 152px;
+        height: 32px;
+    } */
+
+    .desktop-menu {
+       display: inline-block;
+       margin-left: 5px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
     .nav-bar button {
         display: inline-block;
     }
