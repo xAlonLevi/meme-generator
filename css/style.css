@@ -23,6 +23,7 @@ body {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
+    /* justify-items: center; */
     padding: 0 1em;
     border-bottom: 1px solid #ddd;
 }
@@ -126,14 +127,17 @@ section img {
 }
 
 @media (min-width: 800px) {
+
     /* .icon img {
         width: 152px;
         height: 32px;
     } */
 
+
+
     .desktop-menu {
-       display: inline-block;
-       margin-left: 5px;
+        display: inline;
+        margin-left: 5px;
     }
 
     .menu-icon {
@@ -144,9 +148,9 @@ section img {
         display: inline-block;
     }
 
-    .main-nav::after {
+    /* .main-nav::after {
         content: "";
-    }
+    } */
 
     .tool-bar {
         grid-template-columns: 1.5fr 1fr;

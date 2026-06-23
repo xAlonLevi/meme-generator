@@ -13,7 +13,7 @@ input.addEventListener('input', function () {
 function onInit() {
     gElCanvas = document.querySelector('canvas')
     gCtx = gElCanvas.getContext('2d')
-    renderGallery()
+    rendergallery-btn()
     renderMeme()
 }
 
@@ -154,17 +154,17 @@ var gKeywordSearchCountMap = {
 // const elSection = document.querySelector('section')
 
 // for (let i = 0; i < gImgs.length; i++) {
-//     const elImgGallery = new Image()
+//     const elImggallery-btn = new Image()
 
-//     elImgGallery.src = gImgs[i].url
-//     elSection.appendChild(elImgGallery)
+//     elImggallery-btn.src = gImgs[i].url
+//     elSection.appendChild(elImggallery-btn)
 
-//     console.log(elImgGallery);
+//     console.log(elImggallery-btn);
 // }
 
 let strHTML = ''
 
-function renderGallery() {
+function rendergallery-btn() {
     let strHTML = ''
 
     for (let i = 0; i < gImgs.length; i++) {
@@ -178,7 +178,7 @@ function renderGallery() {
 }
 
 
-// Add onClick to the gallery, it calls to onImgSelect =
+// Add onClick to the gallery-btn, it calls to onImgSelect =
 // this func updates gMeme with the clicked img and than 
 // call renderImg
 
@@ -190,20 +190,20 @@ function onImgSelect(imgIdx) {
     console.log(imgIdx)
     gMeme.selectedImgId = imgIdx
 
-    openGallery()
+    opengallery-btn()
     renderMeme()
 }
 
-function openGallery() {
-    const elGallery = document.querySelector('.img-Gallery')
+function opengallery-btn() {
+    const elgallery-btn = document.querySelector('.img-gallery-btn')
     const elMainPage = document.querySelector('.tool-bar')
 
-    if (elGallery.style.display === 'block') {
+    if (elgallery-btn.style.display === 'block') {
         elMainPage.style.display = 'grid'
-        elGallery.style.display = 'none'
+        elgallery-btn.style.display = 'none'
     } else {
         elMainPage.style.display = 'none'
-        elGallery.style.display = 'block'
+        elgallery-btn.style.display = 'block'
     }
 
 }

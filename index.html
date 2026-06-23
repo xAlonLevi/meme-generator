@@ -10,32 +10,28 @@
 
 <body onload="onInit()">
 
+    <div class="main-header">
 
-    <div class="top-container">
+        <div class="logo">
+            <img src="icon-imgs/logo.png" alt="MemeGen">
+        </div>
 
-        <header class="logo">
-            <h1>
-                <img src="icon-imgs/logo.png" alt="MemeGen">
-            </h1>
-        </header>
-
-        <div class="nav-bar">
-            <button class="gallery" onclick="openGallery()">gallery</button>
-
-            <div class="img-Gallery">
-                <section></section>
-            </div>
-
-            <div class="desktop-menu">
-                <button>memes</button>
-                <button>about</button>
-            </div>
+        <nav class="nav-bar">
 
             <button class="menu-btn" onclick="onMenuClick()">
                 <img class="menu-icon" src="icon-imgs/Shape.png" alt="menu">
             </button>
-        </div>
 
+            <div class="desktop-menu">
+                <button class="gallery" onclick="onOpenGallery()">gallery</button>
+                <button>memes</button>
+                <button>about</button>
+            </div>
+
+            <div class="img-Gallery">
+                <section></section>
+            </div>
+        </nav>
 
     </div>
 
@@ -50,14 +46,16 @@
             <input type="text" id="myInput" placeholder="Type here">
 
             <div class="share">download For Now
-                <a href="#" onclick="downloadCanvas(this)" download="file-name">share</a>
+                <a href="#" onclick="onDownloadCanvas(this)" download="file-name">share</a>
             </div>
 
         </div>
 
     </div>
 
-    <script src="js/main.js"></script>
+    <script src="js/meme.service.js"></script>
+    <script src="js/meme.controller.js"></script>
+    <!-- <script src="js/main.js"></script> -->
 </body>
 
 </html>
